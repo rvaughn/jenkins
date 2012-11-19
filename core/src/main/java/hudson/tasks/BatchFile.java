@@ -46,7 +46,7 @@ public class BatchFile extends CommandInterpreter {
     }
 
     protected String getContents() {
-        return command+"\r\nexit %ERRORLEVEL%";
+        return command.replace("\n", "\r\n") + "\r\nexit %ERRORLEVEL%";
     }
 
     protected String getFileExtension() {
