@@ -129,6 +129,7 @@ var breadcrumbs = (function() {
         return false;
     }
 
+    /* no hover menus!
     Behaviour.specify("#breadcrumbs LI", 'breadcrumbs', 0, function (e) {
         // when the mouse hovers over LI, activate the menu
         e = $(e);
@@ -140,6 +141,7 @@ var breadcrumbs = (function() {
         // ditto for model-link, but give it a larger delay to avoid unintended menus to be displayed
         $(a).observe("mouseover", function () { handleHover(a,500); });
     });
+    */
 
     /**
      * @namespace breadcrumbs
